@@ -1,0 +1,7 @@
+# Description: test image
+FROM busybox:latest
+MAINTAINER "hellodemos.com"
+COPY index.html /data/web/html/
+COPY yum.repos.d /etc/yum.repos.d/
+# 注：ADD 的<src> 是网上的nginx下载路径
+ADD http://nginx.org/download/nginx-1.15.8.tar.gz /usr/local/src/
