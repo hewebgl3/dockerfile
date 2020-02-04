@@ -1,0 +1,6 @@
+# Description: test image
+FROM busybox:latest
+MAINTAINER "hellodemo.com"
+#要确保dockerfile 同级路径下有index.html文件,
+#/data/web/html/是busybox中的
+COPY index.html /data/web/html/  
