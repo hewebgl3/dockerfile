@@ -1,0 +1,5 @@
+# Description: test image
+FROM nginx:latest
+MAINTAINER "hellodemos.com"
+COPY index.html /home/nginx/www/
+expose 80

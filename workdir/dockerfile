@@ -1,0 +1,7 @@
+# Description: test image
+FROM busybox:latest
+MAINTAINER "hellodemos.com"
+COPY index.html /data/web/html/
+COPY yum.repos.d /etc/yum.repos.d/
+WORKDIR /usr/local/
+ADD nginx-1.15.8.tar.gz ./src/
